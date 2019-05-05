@@ -137,7 +137,9 @@ export default {
         clearInterval(this.timer)
       } else {
         this.state = '||'
-        // this.moving()
+        setInterval(() => {
+          this.move()
+        }, 500)
       }
     }
   },
